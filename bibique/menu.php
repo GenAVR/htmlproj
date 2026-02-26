@@ -269,7 +269,7 @@
             // Fetch menu items from the database (support both mysqli and PDO)
             if ($conn instanceof PDO) {
                 try {
-                    $stmt = $conn->query("SELECT name, price, category, image_url FROM menu");
+                    $stmt = $conn->query("SELECT * FROM menu");
                     $rows = $stmt ? $stmt->fetchAll(PDO::FETCH_ASSOC) : [];
                     if ($rows) {
                         foreach ($rows as $row) {
@@ -277,8 +277,9 @@
                             $cat = htmlspecialchars($row['category']);
                             $price = htmlspecialchars($row['price']);
                             $img = htmlspecialchars($row['image_url']);
+                            $desc = htmlspecialchars(isset($row['description']) ? $row['description'] : '');
 
-                            echo '<div class="menu-card" data-category="' . $cat . '">';
+                            echo '<div class="menu-card" data-category="' . $cat . '" data-description="' . $desc . '">';
                             echo '  <img src="' . $img . '" alt="' . $name . '">';
                             echo '  <div class="card-body text-center">';
                             echo '    <div class="card-title">' . $name . '</div>';
@@ -298,7 +299,7 @@
                 }
             } else {
                 // assume mysqli
-                $sql = "SELECT name, price, category, image_url FROM menu";
+                $sql = "SELECT * FROM menu";
                 $result = @$conn->query($sql);
 
                 if ($result && $result->num_rows > 0) {
@@ -308,8 +309,9 @@
                         $cat = htmlspecialchars($row['category']);
                         $price = htmlspecialchars($row['price']);
                         $img = htmlspecialchars($row['image_url']);
+                        $desc = htmlspecialchars(isset($row['description']) ? $row['description'] : '');
 
-                        echo '<div class="menu-card" data-category="' . $cat . '">';
+                        echo '<div class="menu-card" data-category="' . $cat . '" data-description="' . $desc . '">';
                         echo '  <img src="' . $img . '" alt="' . $name . '">';
                         echo '  <div class="card-body text-center">';
                         echo '    <div class="card-title">' . $name . '</div>';
