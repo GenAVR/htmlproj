@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BibiQue.shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- BBQ NAVIGATOR -->
+    <header>
+        <nav id="navbar" class="navbar navbar-dark navbar-expand-lg bg-red">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="img/LOGO.png" alt="Logo" title="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-item"><a href="menu.php" class="nav-link"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i> About</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link"><i class="fa-solid fa-truck"></i> Service</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-regular fa-address-card"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- BBQ ORDER NOW -->
+    <div id="carousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/REAL BACKGROUND.png" alt="" class="d-block w-100">
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="row justify-content-center justify-content-md-start">
+                            <div class="col-12 col-md-5 bg-custom py-5 px-0 pl-1">
+                                <h1 class="carousel-text">Brighten Your Moments</h1>
+                                <p class="carousel-text" style="font-size: 1.4em;">Have your Bibique favorites delivered right to your doorstep!</p>
+                                <br>
+                                <a href="menu.html" class="btn btn-art btn-lg">Order Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Logos Section -->
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-10 text-center">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <a href="about.html" class="mx-3 my-2">
+                        <img src="img/ABOUTUSLOGO.png" alt="About Us Logo" class="img-fluid" style="max-width: 250px; height: auto;">
+                    </a>
+                    <a href="contact.html" class="mx-3 my-2">
+                        <img src="img/CONTAUSLOGO.png" alt="Contact Us Logo" class="img-fluid" style="max-width: 250px; height: auto;">
+                    </a>
+                    <a href="service.html" class="mx-3 my-2">
+                        <img src="img/SERVICELOGO.png" alt="Delivery Logo" class="img-fluid" style="max-width: 250px; height: auto;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <br><br>
+        <div class="border-top border-warning w-100mx-auto my-3"></div>
+    <br><br>
+    <!-- Promos Section -->
+    <h1 class="promo text-center">Exclusive Promos</h1>
+    <br>
+            <div class="container" id="superpromo">
+        <div class="row">
+            <div class="col-md-4 my-4">
+                <a href="menu.html">
+                    <img src="img/FAMILY MEAL.png" alt="Family Meal" class="w-100 promo-img">
+                </a>
+            </div>
+            <div class="col-md-4 my-4">
+                <a href="menu.html">
+                    <img src="img/COMBO MEALS.png" alt="Combo Meals" class="w-100 promo-img">
+                </a>
+            </div>
+            <div class="col-md-4 my-4">
+                <a href="menu.html">
+                    <img src="img/MEALS.png" alt="Meals" class="w-100 promo-img">
+                </a>
+            </div>
+        </div>
+        <div class="text-lg-center">
+            <a href="menu.html" class="btn btn-art btn-lg btn-large">See Menu</a>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('.promo-img');
+    
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            images.forEach(image => {
+                observer.observe(image);
+            });
+        });
+    </script>
+    </div>
+    </div>
+    <br><br>
+
+    <!-- property -->
+    <footer class="bg-orange text-light py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="img/LOGO.png" alt="Logo" class="mb-3">
+                    <p>Experience the best BBQ in town. Follow us on social media for the latest updates and exclusive offers.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/art.rivera.195397/" target="_blank" class="text-light"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/home" target="_blank" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/artriveraa/" target="_blank" class="text-light"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/@MrBeast" target="_blank" class="text-light"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <p>&copy; 2024 BIBIQUE.SHOP. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/fd2bbc93ce.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/page-transitions.js"></script>
+</body>
+</html>

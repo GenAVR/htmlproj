@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transitions.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .bg-overlay {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATOR -->
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-red">
+            <div class="container">
+                <a href="index.html" class="navbar-brand"><img src="img/LOGO.png" alt="Logo" title="Logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li class="nav-item"><a href="menu.php" class="nav-link"><i class="fa-solid fa-utensils"></i> Menu</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link active"><i class="fa-solid fa-magnifying-glass"></i> About</a></li>
+                        <li class="nav-item"><a href="service.html" class="nav-link"><i class="fa-solid fa-truck"></i> Service</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link"><i class="fa-regular fa-address-card"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container my-5">
+        <h1 class="text-center fade-in">Welcome to BIBIQUE STORY!</h1>
+        <br><br><br><br><br><br>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <div class="bg-overlay fade-in">
+                    <img src="img/bbqshop1.jpg" alt="BIBIQUE SHOP" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-overlay fade-in">
+                    <h2>Our Story</h2>
+                    <p>BIBIQUE SHOP was established back in the 1990s. The shop was originally started by our grandmother, passed down to my mother, and now it has been passed down to me. Our secret recipe has been kept and cherished through generations, ensuring the same great taste that our customers have loved for decades.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="row my-4">
+            <div class="col-md-6 order-md-2">
+                <div class="bg-overlay fade-in">
+                    <img src="img/bbqshop2.jpeg" alt="Family Tradition" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <div class="bg-overlay fade-in">
+                    <h2>Family Tradition</h2>
+                    <p>Barangay 267, also known as Barangay Alvarez, has been served by our BBQ for almost 40 years and still counting. The community loves our BBQ so much that it has become a staple in their daily lives. We take pride in our family tradition and the love we put into every bite.</p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br>
+        <div class="row my-4">
+            <div class="col-md-6">
+                <div class="bg-overlay fade-in">
+                    <img src="img/bbqshop3.jpg" alt="Expansion" class="img-fluid rounded">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-overlay fade-in">
+                    <h2>Our Expansion</h2>
+                    <p>Today, BIBIQUE SHOP has grown to 22 branches around the Philippines. Our commitment to quality and tradition has allowed us to expand and share our delicious BBQ with more people. We are grateful for the support of our loyal customers and look forward to serving you for many more years to come.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+
+        <!-- Local Video Section -->
+    <div class="container my-5">
+        <div class="embed-responsive embed-responsive-16by9 fade-in" id="video-section">
+            <video class="embed-responsive-item" controls>
+                <source src="BBQVIDEO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <!-- Footer -->
+    <footer class="bg-orange text-light py-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <img src="img/LOGO.png" alt="Logo" class="mb-3">
+                    <p>Experience the best BBQ in town. Follow us on social media for the latest updates and exclusive offers.</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="https://www.facebook.com/art.rivera.195397/" target="_blank" class="text-light"><i class="fab fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://x.com/home" target="_blank" class="text-light"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/artriveraa/" target="_blank" class="text-light"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.youtube.com/@MrBeast" target="_blank" class="text-light"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <p>&copy; 2024 BIBIQUE.SHOP. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/fd2bbc93ce.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/page-transitions.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        if (entry.target.id === 'video-section') {
+                            const video = entry.target.querySelector('video');
+                            video.play();
+                        }
+                    } else {
+                        entry.target.classList.remove('visible');
+                        if (entry.target.id === 'video-section') {
+                            const video = entry.target.querySelector('video');
+                            video.pause();
+                        }
+                    }
+                });
+            }, { threshold: 0.1 });
+    
+            document.querySelectorAll('.fade-in').forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
